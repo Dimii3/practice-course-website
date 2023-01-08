@@ -1,0 +1,173 @@
+/* GENERAL COMPONENTS  */
+
+.container {
+	max-width: 130rem;
+	margin: 0 auto;
+	padding: 0 3.2rem;
+}
+
+.grid {
+	display: grid;
+	row-gap: 9.6rem;
+	column-gap: 6.4rem;
+	margin-bottom: 9.6rem;
+}
+
+.grid:last-child {
+	margin-bottom: 0;
+}
+
+.grid--2-cols {
+	grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+	grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.margin-right-sm {
+	margin-right: 1.6rem;
+}
+
+.margin-bottom-md {
+	margin-bottom: 4.8rem;
+}
+
+.grid--center-v {
+	align-items: center;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+	font-weight: 700;
+	letter-spacing: -0.5px;
+	color: #333;
+}
+.heading-primary {
+	margin-bottom: 3.2rem;
+	font-size: 5.2rem;
+	line-height: 1.05;
+	margin-bottom: 9.6rem;
+}
+
+.heading-secondary {
+	font-size: 4.4rem;
+	line-height: 1.1;
+	margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+	font-size: 3rem;
+	line-height: 1.2;
+	margin-bottom: 3.2rem;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.subheading {
+	display: block;
+	font-size: 1.6rem;
+	font-weight: 500;
+	color: #b8651b;
+	margin-bottom: 1.6rem;
+	text-transform: uppercase;
+	letter-spacing: 0.75px;
+}
+.btn:link,
+.btn:visited {
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	font-size: 2rem;
+	font-weight: 600;
+	padding: 1.6rem 3.2rem;
+	border-radius: 10px;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+	background-color: var(--main-color);
+}
+.btn--full:hover,
+.btn--full:active,
+.btn--full:focus {
+	background-color: var(--darker-main-c);
+	outline: none;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+	background-color: #fff;
+	color: #555;
+}
+
+.btn--outline:hover,
+.btn--outline:active,
+.btn--outline:focus {
+	background-color: #f8d8bd;
+	outline: none;
+}
+
+.link:visited,
+.link:link {
+	color: var(--main-color);
+	display: inline-block;
+	padding-bottom: 0.4rem;
+	border-bottom: 1px solid currentColor;
+	transition: color 0.3s, border-bottom 0.3s;
+}
+
+.link:hover,
+.link:active,
+.link:focus {
+	color: var(--darker-main-c);
+	border-bottom: 1px solid transparent;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	gap: 1.6rem;
+}
+
+.list-item {
+	font-size: 1.8rem;
+}
+
+.list-item i {
+	font-size: 1.8rem;
+	margin-right: 1rem;
+	color: var(--main-color);
+}
+
+.meal-tags {
+	margin-bottom: 2rem;
+	display: flex;
+	gap: 0.6rem;
+}
+
+.tag {
+	display: inline-block;
+	padding: 0.4rem 0.8rem;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	border-radius: 9px;
+	font-weight: 600;
+	color: #333;
+}
+
+.tag--vegetarian {
+	background-color: #51cf66;
+}
+.tag--vegan {
+	background-color: #a9e34b;
+}
+.tag--paleo {
+	background-color: #ffd43b;
+}
