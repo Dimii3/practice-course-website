@@ -59,6 +59,7 @@ li {
 	transition: color 0.3s;
 	color: #333;
 }
+
 .nav__item:active,
 .nav__item:focus,
 .nav__item:hover {
@@ -68,6 +69,7 @@ li {
 	transition: color 0.3s;
 	outline: none;
 }
+
 .nav__item:active,
 .nav__item:focus,
 .nav__item:hover {
@@ -92,6 +94,7 @@ li {
 .nav__item--cta:hover {
 	background-color: var(--darker-main-c);
 }
+
 /* HERO SECTION  */
 
 .section-hero {
@@ -156,6 +159,7 @@ li {
 .section-featured {
 	padding: 4.8rem 0 2rem 0;
 }
+
 .logos {
 	display: flex;
 	justify-content: space-around;
@@ -196,6 +200,7 @@ li {
 	border-radius: 50%;
 	z-index: -2;
 }
+
 .step-img-box::after {
 	width: 50%;
 	height: 60%;
@@ -309,6 +314,7 @@ li {
 	line-height: 1.8;
 	margin-bottom: 1.6rem;
 }
+
 .testimonial-name {
 	font-size: 1.6rem;
 	color: #6f6f6f;
@@ -405,4 +411,77 @@ li {
 .plan-sign-up {
 	text-align: center;
 	margin-top: 4.8rem;
+}
+.plan-details {
+	font-size: 1.6rem;
+	text-align: center;
+	line-height: 1.6;
+}
+.feature-icon {
+	color: var(--main-color);
+	position: relative;
+	display: flex;
+	font-size: 2rem;
+	justify-content: center;
+	align-items: center;
+	width: 4.2rem;
+	height: 4.2rem;
+	margin-bottom: 3.2rem;
+	background-color: #fdf2e9;
+	border-radius: 50%;
+}
+.feature-title {
+	font-size: 2.4rem;
+	color: #333;
+	font-weight: bold;
+	margin-bottom: 1.6rem;
+}
+.feature-text {
+	font-size: 1.8rem;
+	line-height: 1.8;
+}
+
+/* SECTION CTA  */
+.section-cta {
+	padding: 9.6rem 0;
+}
+
+.cta {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	background-color: #e67e22;
+	background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+	box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+	border-radius: 9px;
+	overflow: hidden;
+}
+
+.cta-img-box {
+	background-image: linear-gradient(to right bottom, rgba(235, 151, 78, 0.281), rgba(230, 125, 34, 0.402)),
+		url('/img/eating.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.cta-text-box {
+	color: #2e1907;
+	padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+
+.cta .heading-secondary {
+	color: #2e1907;
+	margin-bottom: 3.2rem;
+}
+
+.cta-text {
+	font-size: 1.8rem;
+	line-height: 1.8;
+	margin-bottom: 4.8rem;
+}
+
+.cta-form {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 3.2rem;
+	row-gap: 2.4rem;
 }

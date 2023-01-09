@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Omnifood</title>
-
 		<!-- FONT  -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,7 +20,6 @@
 	<body>
 		<nav class="nav">
 			<img class="nav__logo" src="/img/omnifood-logo.png" alt="logo" />
-
 			<div class="nav__main">
 				<ul class="nav__list">
 					<li><a class="nav__item" href="#">Section 1</a></li>
@@ -32,7 +30,6 @@
 				</ul>
 			</div>
 		</nav>
-
 		<header class="section-hero">
 			<div class="hero-box">
 				<div class="hero-text-box">
@@ -182,7 +179,6 @@
 							</ul>
 						</div>
 					</div>
-
 					<div class="diets">
 						<h3 class="heading-tertiary">Works with any diet:</h3>
 						<ul class="list">
@@ -286,7 +282,7 @@
 					<span class="subheading">Pricing</span>
 					<h2 class="heading-secondary">Eating well without breaking the bank</h2>
 				</div>
-				<div class="container grid grid--2-cols">
+				<div class="container grid grid--2-cols margin-bottom-md">
 					<div class="pricing-plan pricing-plan--starter">
 						<header class="plan-header">
 							<p class="plan-name">Starter</p>
@@ -314,8 +310,12 @@
 							<p class="plan-text">That's just $11 per meal</p>
 						</header>
 						<ul class="list">
-							<li class="list-item"><i class="fa-solid fa-check"></i> <strong>2 meal</strong> per day</li>
-							<li class="list-item"><i class="fa-solid fa-check"></i> Order <strong>24/7</strong></li>
+							<li class="list-item">
+								<i class="fa-solid fa-check"></i> <strong>2 meal</strong> per day
+							</li>
+							<li class="list-item">
+								<i class="fa-solid fa-check"></i> Order <strong>24/7</strong>
+							</li>
 							<li class="list-item"><i class="fa-solid fa-check"></i> Delivery is free</li>
 							<li class="list-item">
 								<i class="fa-solid fa-check"></i> Get acces s to latest recipes
@@ -326,11 +326,76 @@
 						</div>
 					</div>
 				</div>
+				<div class="container grid">
+					<aside class="plan-details">
+						Prices include all applicable taxes. You can cancel at any time. Both plans include
+						the following:
+					</aside>
+				</div>
 				<div class="container grid grid--4-cols">
-					<div class="feature">1</div>
-					<div class="feature">2</div>
-					<div class="feature">3</div>
-					<div class="feature">4</div>
+					<div class="feature">
+						<i class="fa-solid fa-infinity feature-icon"></i>
+						<p class="feature-title">Never cook again!</p>
+						<p class="feature-text">
+							Our subscriptions cover 365 days per year, even including major holidays.
+						</p>
+					</div>
+					<div class="feature">
+						<i class="fa-solid fa-earth-americas feature-icon"></i>
+						<p class="feature-title">Local and organic</p>
+						<p class="feature-text">
+							Our cooks only use local, fesh, and organic products to prepare your meals.
+						</p>
+					</div>
+					<div class="feature">
+						<i class="fa-solid fa-recycle feature-icon"></i>
+						<p class="feature-title">No waste</p>
+						<p class="feature-text">
+							All our partners only use reusable containers to package all your meals.
+						</p>
+					</div>
+					<div class="feature">
+						<i class="fa-solid fa-pause feature-icon"></i>
+						<p class="feature-title">Pause in anytime</p>
+						<p class="feature-text">
+							Going on vacation? Just pause your subscripiton, and we refuns unused days.
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="section-cta">
+				<div class="container">
+					<div class="cta">
+						<div class="cta-text-box">
+							<h2 class="heading-secondary">Get your first meal for free</h2>
+							<p class="cta-text">
+								Healthy, tasty and hassle-free meals are waiting for you. Start eating well
+								todya. You can cancel or pause anytime. And the first meal is on us!
+							</p>
+							<form class="cta-form">
+								<div>
+									<label for="full-name">Enter your name</label>
+									<input type="text" id="full-name" placeholder="John Smith" required />
+								</div>
+								<div>
+									<label for="email">Your address email</label>
+									<input type="email" id="email" placeholder="name@example.com" required />
+								</div>
+								<div>
+									<label for="select-where">Where did you hear from us?</label>
+									<select id="select-where" required>
+										<option value="" selected>Please choose on option:</option>
+										<option value="friends">Friends and family</option>
+										<option value="youtube">Youtube Videos</option>
+										<option value="podcast">Podcast</option>
+										<option value="others">Others</option>
+									</select>
+								</div>
+								<button class="btn">Sign up now</button>
+							</form>
+						</div>
+						<div class="cta-img-box" role="img" aria-label="Woman enjoying food"></div>
+					</div>
 				</div>
 			</section>
 		</main>
