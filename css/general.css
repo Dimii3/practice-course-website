@@ -26,6 +26,9 @@
 .grid--4-cols {
 	grid-template-columns: repeat(4, 1fr);
 }
+.grid--5-cols {
+	grid-template-columns: repeat(5, 1fr);
+}
 
 .margin-right-sm {
 	margin-right: 1.6rem;
@@ -78,6 +81,7 @@
 	text-transform: uppercase;
 	letter-spacing: 0.75px;
 }
+.btn,
 .btn:link,
 .btn:visited {
 	display: inline-block;
@@ -86,8 +90,10 @@
 	font-size: 2rem;
 	font-weight: 600;
 	padding: 1.6rem 3.2rem;
+	border: none;
 	border-radius: 10px;
 	transition: background-color 0.3s, color 0.3s;
+	cursor: pointer;
 }
 
 .btn--full:link,
@@ -114,10 +120,23 @@
 	outline: none;
 }
 
+.btn--form {
+	background-color: #45260a;
+	color: var(--main-color);
+	align-self: end;
+	padding: 1.2rem;
+}
+
+.btn--form:hover, 
+.btn--form:focus, 
+.btn--form:active {
+	background-color: #552f0e;
+} 
+
 .link:visited,
 .link:link {
-	color: var(--main-color);
 	display: inline-block;
+	color: var(--main-color);
 	padding-bottom: 0.4rem;
 	border-bottom: 1px solid currentColor;
 	transition: color 0.3s, border-bottom 0.3s;
@@ -147,8 +166,8 @@
 }
 
 .meal-tags {
-	margin-bottom: 2rem;
 	display: flex;
+	margin-bottom: 2rem;
 	gap: 0.6rem;
 }
 
